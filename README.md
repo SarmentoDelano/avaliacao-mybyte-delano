@@ -23,14 +23,10 @@ no terminal:
 cd teste-1
 
 
-Windows
 
 py -m http.server 5500
 
 
-macOS/Linux
-
-python3 -m http.server 5500
 
 
 Acesse: http://localhost:5500
@@ -60,14 +56,10 @@ criar/ativar venv
 python -m venv .venv
 
 
-Windows
 
 .\.venv\Scripts\activate
 
 
-macOS/Linux
-
-source .venv/bin/activate
 
 
 Dependências
