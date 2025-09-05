@@ -72,17 +72,22 @@ pip install -r requirements.txt
 Migrações + servidor
 
 python manage.py migrate
+
 python manage.py runserver 8000
 
 
 API: http://localhost:8000/api/v1/health => {"status": "ok"}
 
+
 Front-end:
 
 cd ../frontend
+
 npm install
+
 npm run dev
 
 
 Acesse: http://localhost:5173
+
 
