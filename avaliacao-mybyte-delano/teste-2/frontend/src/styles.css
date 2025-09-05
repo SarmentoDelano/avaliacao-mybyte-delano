@@ -1,0 +1,80 @@
+/* tema e base   */
+:root{
+  --bg:#0b0b0b; --card:#121212; --text:#ededed; --muted:#b8b8b8;
+  --border:#2a2a2a; --focus:#8ab4f8; --accent:#1f6feb;
+  --radius:14px;
+}
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body{ margin:0; font-family:Inter, system-ui, Arial, sans-serif; background:var(--bg); color:var(--text) }
+
+/* container central do app */
+.container{ width:min(1100px,92vw); margin-inline:auto; padding:32px 0 48px }
+header{ text-align:center; margin-bottom:24px }
+/* grid responsiva dos cards */
+.grid{ display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); }
+
+/* card padrão */
+.card{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px }
+.card h2{ margin:0 0 12px 0; font-size:1.1rem }
+
+/* campos do formulário */
+.field{ display:flex; flex-direction:column; gap:6px; margin:10px 0 }
+.field input{
+  background:#0e0f10; color:var(--text); border:1px solid var(--border);
+  border-radius:12px; padding:12px 14px; min-height:44px;
+}
+/* foco visível  */
+.field input:focus-visible{ outline:2px solid var(--focus); outline-offset:2px }
+
+/* botões */
+button{
+  margin-top:8px; min-height:44px; border-radius:12px; border:1px solid transparent;
+  background:var(--accent); color:white; font-weight:600; cursor:pointer; padding:10px 16px;
+}
+button:hover{ filter: brightness(1.08) }
+button:disabled{ background:#2a3c5f; cursor:not-allowed; filter:grayscale(.2) }
+
+/* bloco de resultados e mensagens */
+.result{ margin-top:24px; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px }
+.result pre{ margin:0; white-space:pre-wrap; word-break:break-word }
+.error{ color:#ff8080 }
+
+/* rodape simples */
+footer{ margin-top:20px; color:var(--muted); text-align:center }
+
+/* titulo do resultado */
+.result { margin-top:24px; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px }
+.result h3 { margin-top:0 }
+
+/* layout dos cartoes de saida */
+.resultCards { display:grid; gap:16px }
+.resultCard {
+  background:#101112;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px;
+}
+.resultCard__header { display:flex; gap:8px; align-items:center; justify-content:space-between }
+.resultCard__value { font-size:1.8rem; font-weight:700; margin:6px 0 10px }
+
+/*  lista de detalhes do calculo */
+.resultCard__list { list-style:none; padding:0; margin:0 0 10px 0; display:grid; gap:4px }
+.resultCard__list li { color:var(--muted) }
+.resultCard__list strong { color:var(--text) }
+
+/* selo com a fórmula */
+.badge {
+  display:inline-flex; align-items:center; gap:6px;
+  border:1px solid #2b2b2b; background:#0c0d0e; color:#c9d1d9;
+  padding:4px 8px; border-radius:999px; font-size:.8rem; white-space:nowrap;
+}
+
+/* barra de progresso  */
+.progress { position:relative; height:10px; background:#0e0f10; border:1px solid var(--border); border-radius:999px; overflow:hidden; }
+.progress__bar { height:100%; background:linear-gradient(90deg, #1f6feb, #58a6ff); }
+.progress__label { margin-top:6px; font-size:.85rem; color:var(--muted); }
+
+/*  area opcional para ver o JSON */
+.resultRaw summary { cursor:pointer; margin-top:8px; color:#9ecbff }
+.resultRaw pre { margin:8px 0 0; white-space:pre-wrap; word-break:break-word }
