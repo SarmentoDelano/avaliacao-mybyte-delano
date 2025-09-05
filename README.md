@@ -52,19 +52,14 @@ Back-end:
 
 cd teste-2/backend
 
-
-criar/ativar venv
-
 python -m venv .venv
-
-
 
 .\.venv\Scripts\activate
 
 
 
 
-Dependências
+Dependências:
 
 pip install -r requirements.txt
 
@@ -89,5 +84,6 @@ npm run dev
 
 
 Acesse: http://localhost:5173
+
 
 
