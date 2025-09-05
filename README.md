@@ -2,6 +2,8 @@ Avaliação Técnica — MyByte
 
 Obrigado pela oportunidade de participar do processo seletivo. Fico feliz em mostrar minhas habilidades!
 
+
+
 Teste 1 — Formulário Estilizado (HTML, CSS, JS)
 Preview
 
@@ -31,6 +33,8 @@ py -m http.server 5500
 
 Acesse: http://localhost:5500
 (ou abra o arquivo index.html diretamente no navegador)
+
+
 
 Teste 2 — Cálculos Financeiros (React + Django REST)
 Preview
@@ -84,6 +88,7 @@ npm run dev
 
 
 Acesse: http://localhost:5173
+
 
 
 
