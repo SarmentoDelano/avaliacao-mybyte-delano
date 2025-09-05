@@ -1,4 +1,4 @@
-Avaliação Técnica — MyByte
+Avaliação Técnica MyByte
 
 Obrigado pela oportunidade de participar do processo seletivo. Fico feliz em mostrar minhas habilidades!
 
@@ -88,6 +88,7 @@ npm run dev
 
 
 Acesse: http://localhost:5173
+
 
 
 
