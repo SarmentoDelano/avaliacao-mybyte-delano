@@ -17,13 +17,13 @@ JavaScript
 Como rodar (passo a passo)
 
 no terminal: cd teste-1
-# Windows
+Windows
 py -m http.server 5500
-# macOS/Linux
+macOS/Linux
 python3 -m http.server 5500
 
-# abra http://localhost:5500
-# (ou abra o arquivo index.html diretamente no navegador)
+abra http://localhost:5500
+(ou abra o arquivo index.html diretamente no navegador)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -44,41 +44,24 @@ Como rodar (passo a passo)
 1) Back-end (Django + DRF)
 cd teste-2/backend
 
-# criar/ativar venv
+criar/ativar venv
 python -m venv .venv
-# Windows
+Windows
 .\.venv\Scripts\activate
-# macOS/Linux
+macOS/Linux
 source .venv/bin/activate
 
-# dependências
+dependências
 pip install -r requirements.txt
 
-# migrações + servidor
+migrações + servidor
 python manage.py migrate
 python manage.py runserver 8000
-# API: http://localhost:8000/api/v1/health => {"status": "ok"}
+API: http://localhost:8000/api/v1/health => {"status": "ok"}
 
 2) Front-end (React + Vite)
 cd ../frontend
 npm install
 npm run dev
-# abra http://localhost:5173
 
-
-Endpoints expostos
-
-POST /api/v1/juros-simples = { capital, taxa, tempo }
-POST /api/v1/juros-compostos = { capital, taxa, tempo }
-POST /api/v1/valor-presente = { futuro, taxa, tempo }
-
-
-
-Estrutura resumida do repositório
-
-teste-1/                # formulário estilizado (HTML/CSS/JS)
-teste-2/
-  backend/              # Django + DRF
-  frontend/             # React + Vite
-.gitignore
-README.md               # este arquivo
+abra http://localhost:5173
