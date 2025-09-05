@@ -16,7 +16,7 @@ CSS3
 
 JavaScript
 
-Como rodar (passo a passo)
+Como rodar:
 
 no terminal:
 
@@ -46,8 +46,10 @@ Back-end: Django 5 + Django REST Framework
 
 CORS: django-cors-headers
 
-Como rodar (passo a passo)
-Back-end (Django + DRF)
+Como rodar:
+
+Back-end:
+
 cd teste-2/backend
 
 
@@ -75,10 +77,12 @@ python manage.py runserver 8000
 
 API: http://localhost:8000/api/v1/health => {"status": "ok"}
 
-Front-end (React + Vite)
+Front-end:
+
 cd ../frontend
 npm install
 npm run dev
 
 
 Acesse: http://localhost:5173
+
